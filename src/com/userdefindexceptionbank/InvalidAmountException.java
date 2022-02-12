@@ -1,4 +1,4 @@
-	package com.exceptionhandling1;
+	package com.userdefindexceptionbank;
 
 public class InvalidAmountException extends Exception {
 	double amount;

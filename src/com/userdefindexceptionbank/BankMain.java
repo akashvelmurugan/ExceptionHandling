@@ -1,4 +1,4 @@
-package com.exceptionhandling1;
+package com.userdefindexceptionbank;
 
 public class BankMain {
 	public static void main(String[] args) {
