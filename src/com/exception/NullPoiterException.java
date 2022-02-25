@@ -3,10 +3,10 @@ package com.exception;
 public class NullPoiterException {
 	public static void main(String[] args) {
 		
-		String string = "";
+		String string =null;
 		
-		char charAt = string.charAt(0);
-		
+		int length = string.length();
+		System.out.println(length+1);
 		
 	}
 	

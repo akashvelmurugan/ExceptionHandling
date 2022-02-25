@@ -3,15 +3,23 @@ package com.throwandthrows;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class Throws {
-	public static void main(String[] args) throws FileNotFoundException, InterruptedException {
+
+	private static void throwException()  {
 
 		File file= new File("D:");
+		try {
 		FileInputStream fileInputStream=new FileInputStream(file);
-
-		Thread.sleep(2000);
-	
-	
+	}	
+	catch(FileNotFoundException e) {
+		System.out.println(e);
+	}
+	}	
+	public static void main(String[] args)  {
+			throwException();
+		
+			//Thread.sleep(2000);
 	}
 }

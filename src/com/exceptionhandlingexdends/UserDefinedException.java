@@ -1,4 +1,4 @@
-package com.userdefindedexception;
+package com.exceptionhandlingexdends;
 
 import java.util.Scanner;
 

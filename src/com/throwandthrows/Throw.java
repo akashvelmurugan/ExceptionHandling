@@ -1,24 +1,15 @@
 package com.throwandthrows;
 
-import com.exceptionhandling.ArithMAricException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 
 public class Throw {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException, InterruptedException {
 
+		File file =new File("D:");
+		FileInputStream fileInputStream = new FileInputStream(file);
 
-		int a=10;
-		int b=0;
-		//int c;
-		try {
-			if (a==b) {
-				System.out.println("A and B is Equal");
-			} else {
-				throw new ArithmeticException();
-			}
-		} catch (ArithmeticException e) {
-			System.out.println("A and B is Not Equal");
-		}
-
-
+		Thread.sleep(2000);
 	}
 }
